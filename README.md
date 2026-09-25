@@ -13,26 +13,44 @@ I have configured three separate web applications using three of the most popula
 This repository contains three isolated environments organized as follows:
 
 ```
-Packaging_popular_frameworks/
-├── README.md
-├── node-app/
+Packaging_popular_frameworks
+├── java-app
+│   ├── pom.xml
+│   └── src
+│       └── main
+│           ├── java
+│           │   └── com
+│           │       └── demo
+│           │           └── DemoApplication.java
+│           └── resources
+│               └── application.properties
+├── node-app
 │   ├── package.json
-│   ├── package-lock.json
-│   ├── .env
-│   ├── index.js                  # Express server entry point
-│   └── node_modules/             # Local dependencies
-├── python-app/
-│   ├── requirements.txt
-│   ├── manage.py                 # Django application runner
-│   ├── venv/                     # Isolated virtual environment
-│   └── dist/                     # Compiled distribution artifacts
-│       ├── python_packaging_demo-1.0.0-py3-none-any.whl
-│       └── python_packaging_demo-1.0.0.tar.gz
-└── java-app/
-    ├── pom.xml                   # Maven configuration and dependencies
-    ├── src/                      # Java Spring Boot source code
-    └── target/                   # Compiled Java artifacts
-        └── demo-1.0.0.jar
+│   └── src
+│       └── index.js
+├── python-app
+│   ├── core
+│   │   ├── asgi.py
+│   │   ├── __init__.py
+│   │   ├── settings.py
+│   │   ├── urls.py
+│   │   ├── views.py
+│   │   └── wsgi.py
+│   ├── manage.py
+│   ├── pyproject.toml
+│   └── requirements.txt
+├── README.md
+└── screenshots
+    ├── build_success.png
+    ├── java_artifact.png
+    ├── npm_pack.png
+    ├── npm_start_page.png
+    ├── npm_start.png
+    ├── python_build.png
+    ├── python_virtual.png
+    ├── run_python.png
+    ├── run_python_view.png
+    └── spring_boot_run.png
 
 ```
 
